@@ -22,3 +22,15 @@ python manage.py makemigrations
 ```bash
 python manage.py migrate
 ```
+
+4. superuser 생성
+```bash
+python manage.py createsuperuser
+```
+
+5. admin에 모델 등록
+```python
+from django.contrib import admin
+from .models import Post
+admin.site.register(Post)
+```
